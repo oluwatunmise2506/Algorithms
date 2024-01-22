@@ -1,0 +1,28 @@
+/* putting an image in a circulr shape */
+
+.myImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+
+}
+
+.myText{
+    font-size: 60px;
+    color: green;
+}
+
+.thisText{
+    color: red;
+    font-size: 25px;
+}
+
+.theName{
+    display: block;
+    margin-bottom: 10px ;
+    margin-top:10px;
+    width: 800px;
+    border: solid 2px grey;
+    border-radius: 6px;
+    height: 50px;
+}
