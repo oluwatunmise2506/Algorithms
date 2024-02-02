@@ -118,3 +118,18 @@ let reversedName = myName.split("").reverse().join("");
 
 
 console.log(reversedName);
+
+
+
+function fibonacciGenerator(n) {
+  let setOfNumbers = [0,1]
+
+  for (let i = 0; i < array.length; i++) {
+    const number1 = setOfNumbers[i];
+    
+  }
+  for (let j = 1; j < array.length; j++) {
+    const number2= setOfNumbers[j];
+    
+  }
+}
