@@ -121,15 +121,30 @@ console.log(reversedName);
 
 
 
-function fibonacciGenerator(n) {
+function fibonacciGenerator() {
   let setOfNumbers = [0,1]
+  
 
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < setOfNumbers.length; i++) {
     const number1 = setOfNumbers[i];
+
+    for (let j = 1; j < setOfNumbers.length; j++) {
+      const element = setOfNumbers[j];
+
+      answer = setOfNumbers[i] + setOfNumbers[j]
+
+      while (answer) {
+        setOfNumbers.push(answer)
+        return setOfNumbers
+      }
+      
+    }
     
   }
-  for (let j = 1; j < array.length; j++) {
-    const number2= setOfNumbers[j];
-    
-  }
+ return setOfNumbers 
 }
+
+
+console.log(fibonacciGenerator());
+console.log(fibonacciGenerator());
+console.log(fibonacciGenerator());
