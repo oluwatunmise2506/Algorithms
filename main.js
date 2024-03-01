@@ -134,17 +134,50 @@ function fibonacciGenerator() {
       answer = setOfNumbers[i] + setOfNumbers[j]
 
       while (answer) {
+
         setOfNumbers.push(answer)
-        return setOfNumbers
-      }
+           
+
+
+        return  setOfNumbers 
+        
+      
       
     }
     
   }
- return setOfNumbers 
+ 
+}}
+
+
+console.log(fibonacciGenerator());
+console.log(fibonacciGenerator());
+console.log(fibonacciGenerator());
+
+
+function addToCarts() {
+  let item = document.getElementById("the_added_item").value
+
+  console.log(item);
+  document.getElementById("the_added_item").textContent = document.getElementById("input_value").value
+
+  
 }
 
 
-console.log(fibonacciGenerator());
-console.log(fibonacciGenerator());
-console.log(fibonacciGenerator());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
