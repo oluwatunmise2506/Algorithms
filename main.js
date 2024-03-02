@@ -154,14 +154,33 @@ console.log(fibonacciGenerator());
 console.log(fibonacciGenerator());
 console.log(fibonacciGenerator());
 
+  
+$(document).ready(function () {
+  alert("praise GOD");
+})
+
+
+
+function addNewText(text) {
+  let parent = $("#parent")
+
+  let textId = `${text}`
+
+  let elementToAdd = `<span id="${textId}"></span>`
+  
+  parent.append(elementToAdd)
+}
+
 
 function addToCarts() {
-  let item = document.getElementById("the_added_item").value
-
-  console.log(item);
-  document.getElementById("the_added_item").textContent = document.getElementById("input_value").value
-
+  let item = document.getElementById("input_value").value
   
+
+if (item) {
+  console.log(item);
+  document.getElementById("parent").innerHTML = item
+}
+    
 }
 
 
