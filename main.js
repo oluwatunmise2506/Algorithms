@@ -1,12 +1,37 @@
 //algorithms and Data structure
-// 1.Getting the largest number in an array
-// 2.Getting the smallest number in an array
-// 3.Mking the sum // product or diffrence of two numbers in an array meet target
+// 1.Getting the smallest number in an array
+// 2.Getting the largest number in an array
+
+//1.Getting the smallest number in an array
+// A function that takes an array an returns the smallest value.let ourAges = [12, 9, 14, 78, 90, 98, 7, 14]
+
+ let ourAges = [15, 3, 58, 7, 60, 62, 17, 151]
+function getSmallestNumber(arr) {
+  if (!arr || arr.length == 0 ) {
+    return 0;
+  }
+  if (arr.length == 1) {
+    return 0;
+  }
+let getminimumNumber = Number .MAX_SAFE_INTEGER
+
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+      
+
+        if ( element < getminimumNumber ) {
+          getminimumNumber = element
+        }
+    }
 
 
-//1.Getting the largest number in an array
-let ourAges = [12, 9, 14, 78, 90, 98, 7, 14]
 
+    return getminimumNumber;
+  }
+
+  //console.log(getSmallestNumber(ourAges));
+
+  
 
 function getLargestNumber(arr) {
 
@@ -28,7 +53,115 @@ let getTheLargestNumber = Number .MIN_SAFE_INTEGER
     return getTheLargestNumber
 }
 
-console.log(getLargestNumber(ourAges));
+//console.log(getLargestNumber(ourAges));
+
+//Sum of an array
+//A function that Calcultes the sum of all elements in an array.
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ function sumOfarray(arr) {
+  let sum = 0
+  let i = arr[0]
+  
+   if (!arr || arr.length == 0) {
+        return 0;
+    }
+    if (arr.length == 1) {
+        return 0 ;
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+      const myNumber = arr[i];
+      sum += myNumber;
+
+    }
+     
+    
+    return sum;
+
+ }
+ //console.log(sumOfarray(numbers));
+
+ //using the forEach method
+ let total = 0
+
+ function sumUp(number) {
+  total += number;
+ }
+ numbers.forEach(sumUp);
+ //console.log(total);
+
+
+//Algorithm: Counting occurrences; determines how many times each item appears in a list
+
+let groceries = ["Fish", "Garri", "Egusi", "Garri", "Crayfish", "Fish", "Garri"] 
+function countItem(arr) {
+  let item = {}
+
+  for (let i = 0; i < arr.length; i++) {
+    const newItem = arr[i];
+      if (item[newItem]) {
+        item[newItem]++
+      } else {
+        item[newItem] =  1
+      } 
+    
+  }
+  return item;
+}
+console.log(countItem(groceries));    
+
+
+//Linear search : Finding a specific item within a list by examining each  element one by one
+
+let registredStudents = ["Ann", "Jane", "Bridget", "Mary",  "Nancy", "Bella"]
+function findName(arr , name) {
+  for (let i = 0; i < arr.length; i++) {
+
+    if (name == arr[i]) {
+        return [arr[i], i, "She is in Basic 4"];       
+    }
+  }
+  // If name of student is not found || if condition is not met
+  return "Name not found, she is not a registered student!"
+}
+
+console.log(findName(registredStudents , "Ann"));
+console.log(findName(registredStudents , "Nancy"));
+console.log(findName(registredStudents , "Dan"));
+
+
+
+ function summ(numberr, targett) {
+   let hash ={}
+
+   for (let i = 0; i < numberr.length; i++) {
+    let diff = targett - numberr[i];
+    console.log(diff);
+    if (hash[diff]) {
+      console.log(hash[diff]);
+      return[hash[diff], i]
+    }
+   }
+   hash[numberr[i]]
+
+ }
+console.log(summ([5, 6], 8));
+
+
+let person = {
+  name : "tope",
+  age : 26,
+  siblings : 34
+}
+
+
+
+keys = Object.values(person)
+//console.log(keys);
+
+// 3.Mking the sum // product or diffrence of two numbers in an array meet target
+
+
 
 // note : to get the smallest number, change to Number .MAX_SAFE_INTEGER
 
@@ -88,7 +221,7 @@ function twoSum(arr, target) {
 
  }
 
-console.log(threesums(nums, target));
+//console.log(threesums(nums, target));
 
 // Adding new an increasing numbers into an array 
 let theNumber = [];
@@ -104,11 +237,11 @@ function countMyNumbers() {
    read++;
   return theNumber;
 };
-console.log(countMyNumbers());
-console.log(countMyNumbers());
-console.log(countMyNumbers());
-console.log(countMyNumbers());
-console.log(countMyNumbers());
+// console.log(countMyNumbers());
+// console.log(countMyNumbers());
+// console.log(countMyNumbers());
+// console.log(countMyNumbers());
+// console.log(countMyNumbers());
 
 
 
@@ -117,7 +250,7 @@ let myName = "oluwatunmisemodesola" ;
 let reversedName = myName.split("").reverse().join("");
 
 
-console.log(reversedName);
+//console.log(reversedName);
 
 
 
@@ -149,12 +282,12 @@ function fibonacciGenerator() {
   }
  
 }}
-console.log(fibonacciGenerator());
-console.log(fibonacciGenerator());
-console.log(fibonacciGenerator());
+// console.log(fibonacciGenerator());
+// console.log(fibonacciGenerator());
+// console.log(fibonacciGenerator());
 
 
-
+  
 
 
 
