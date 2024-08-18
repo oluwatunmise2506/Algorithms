@@ -129,23 +129,39 @@ console.log(findName(registredStudents , "Ann"));
 console.log(findName(registredStudents , "Nancy"));
 console.log(findName(registredStudents , "Dan"));
 
+//The Bubble Sort algorithm : Repeatedly compares and swaps djacnt elements in a list.
+let numberList = [4, 1, 0,  7, 23, 32, 5, 62, 78, 45, 21, 18]
+let firstNumber
+let secondNumber 
+function sortNumbers(arr) {
+  let sortedList = []
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 1; j < arr.length; j++) {
+      if (true) {
+        firstNumber = arr[i] ;
+        i++
+        //console.log(firstNumber);
+        
+        secondNumber = arr [j]
+        
+        //console.log(secondNumber);
 
+        if (firstNumber > secondNumber) {
+        console.log(firstNumber);
+        console.log(secondNumber);
+        
+          secondNumber
 
- function summ(numberr, targett) {
-   let hash ={}
+          //console.log(secondNumber);
+        }
+      }
 
-   for (let i = 0; i < numberr.length; i++) {
-    let diff = targett - numberr[i];
-    console.log(diff);
-    if (hash[diff]) {
-      console.log(hash[diff]);
-      return[hash[diff], i]
     }
-   }
-   hash[numberr[i]]
+  }
+  
+}   
 
- }
-console.log(summ([5, 6], 8));
+console.log(sortNumbers(numberList));
 
 
 let person = {
@@ -168,8 +184,8 @@ keys = Object.values(person)
 
 // 3. MAKING the sum of two numbers in an array meet the target
 // From the array above, get the indices of the sum of two ages that will give 16
-
-//target = 16
+let age = [5, 14, 2, 1, 10, 6]
+target = 16
 function twoSum(arr, target) {
   let result = [] ;
 
@@ -187,10 +203,10 @@ function twoSum(arr, target) {
        result.push(j)  
        return result                                                                                                                                                                                                                                                                         
   }}}
-  //return result
+  return result
 }
 
-//console.log(twoSum(ourAges, target));
+//console.log(twoSum(age, target));
 
 // Strictly Increasing integer in an array
 
@@ -274,7 +290,6 @@ function fibonacciGenerator() {
 
 
         return  setOfNumbers 
-        
       
       
     }
@@ -285,25 +300,3 @@ function fibonacciGenerator() {
 // console.log(fibonacciGenerator());
 // console.log(fibonacciGenerator());
 // console.log(fibonacciGenerator());
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
