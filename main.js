@@ -108,7 +108,7 @@ function countItem(arr) {
   }
   return item;
 }
-console.log(countItem(groceries));    
+//console.log(countItem(groceries));    
 
 
 //Linear search : Finding a specific item within a list by examining each  element one by one
@@ -125,41 +125,42 @@ function findName(arr , name) {
   return "Name not found, she is not a registered student!"
 }
 
-console.log(findName(registredStudents , "Ann"));
-console.log(findName(registredStudents , "Nancy"));
-console.log(findName(registredStudents , "Dan"));
+//console.log(findName(registredStudents , "Ann"));
+//console.log(findName(registredStudents , "Nancy"));
+//console.log(findName(registredStudents , "Dan"));
 
-//The Bubble Sort algorithm : Repeatedly compares and swaps djacnt elements in a list.
+
+
+
+
+
+
+// The Bubble Sort algorithm : Repeatedly compares and swaps adjacent elements in a list.
+// The goal is to arrange the numbers in accending order; from the smallest to the biggest.
 let numberList = [4, 1, 0,  7, 23, 32, 5, 62, 78, 45, 21, 18]
-let firstNumber
-let secondNumber 
+
 function sortNumbers(arr) {
-  let sortedList = []
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 1; j < arr.length; j++) {
-      if (true) {
-        firstNumber = arr[i] ;
-        i++
-        //console.log(firstNumber);
-        
-        secondNumber = arr [j]
-        
-        //console.log(secondNumber);
+  let L = arr.length
+  // Outer loop : controls the number of times the sorting occurs
+  for (let i = 0; i < L - 1; i++) {
 
-        if (firstNumber > secondNumber) {
-        console.log(firstNumber);
-        console.log(secondNumber);
-        
-          secondNumber
+    // Inner loop : compares and swaps
+    for (let j = 0; j < L - i - 1; j++) {
 
-          //console.log(secondNumber);
-        }
-      }
+      // if current number(element) is greater than the next,
+      if (arr[j] > arr[j + 1]) {
+        let currentNumber = arr[j]
 
-    }
-  }
-  
-}   
+        // They are swapped,
+        arr[j] = arr[j + 1]
+
+        // To move the larger number to the right
+        arr[j + 1] = currentNumber
+      }}}
+
+      // Return the Sorted list
+      return arr
+    }   
 
 console.log(sortNumbers(numberList));
 
